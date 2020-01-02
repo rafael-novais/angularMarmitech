@@ -1,0 +1,24 @@
+.card {
+    right: 0;
+}
+.section-wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.perfil-wrapper {
+    flex: 1;
+}
+.form-perfil-wrapper{
+    flex: 2;
+}
+button {
+    width: 50%;
+    margin: auto;
+}
+nav {
+    width: 80%;
+    margin: auto;
+}

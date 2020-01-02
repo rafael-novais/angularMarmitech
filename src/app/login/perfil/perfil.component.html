@@ -1,0 +1,67 @@
+<app-header></app-header>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Editar perfil</li>
+  </ol>
+</nav>
+
+<div class="section-wrapper">
+    <section class="perfil-wrapper">
+        <div class="card" style="width: 18rem;">
+            <img [src]="ls.usuario.foto" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ ls.usuario.nome }}</h5>
+              <p class="card-text">{{ ls.usuario.sobre }}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{ ls.usuario.cargo }}</li>
+              <li class="list-group-item">{{ ls.usuario.email }}</li>
+              <li class="list-group-item">{{ ls.usuario.telefone }}</li>
+            </ul>
+          </div>
+    </section>
+    
+    <section class="form-perfil-wrapper">
+        <form [formGroup]="formEdicao" (submit)="atualizar()">
+              <div class="form-group">
+                <label>Nome</label>
+                <input formControlName="nome" type="text" class="form-control" aria-describedby="emailHelp">
+                <small *ngIf="formEdicao.get('nome').errors?.required" class="text-danger form-text text-muted">Campo obrigatório</small>
+              </div>
+              <div class="form-group">
+                  <label>Email</label>
+                  <input formControlName="email" type="email" class="form-control" aria-describedby="emailHelp">
+                  <small *ngIf="formEdicao.get('email').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+              </div>
+              <div class="form-group">
+                  <label>Senha</label>
+                  <input formControlName="senha" type="password" class="form-control" aria-describedby="emailHelp">
+                  <small *ngIf="formEdicao.get('senha').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+              </div>
+              <div class="form-group">
+                  <label>Foto</label>
+                  <input formControlName="foto" type="text" class="form-control" aria-describedby="emailHelp">
+                  <small *ngIf="formEdicao.get('foto').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+              </div>
+              <div class="form-group">
+                 <label>Cargo</label>
+                 <input formControlName="cargo" type="text" class="form-control" aria-describedby="emailHelp">
+                 <small *ngIf="formEdicao.get('cargo').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+              </div>
+              <div class="form-group">
+                 <label>Sobre</label>
+                 <input formControlName="sobre" type="text" class="form-control" aria-describedby="emailHelp">
+                 <small *ngIf="formEdicao.get('sobre').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+              </div>
+              <div class="form-group">
+                  <label>Telefone</label>
+                  <input formControlName="telefone" type="text" class="form-control" aria-describedby="emailHelp">
+                  <small *ngIf="formEdicao.get('telefone').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+              </div>
+              <button type="submit" [disabled]="formEdicao.invalid" class="btn btn-primary">Atualizar</button>
+        </form>
+    </section>
+</div>
+
+<app-footer></app-footer>

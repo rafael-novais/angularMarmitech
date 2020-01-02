@@ -1,0 +1,22 @@
+form {
+    width: 30%;
+    margin: auto;
+    margin-top: 10%;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+}
+input {
+    width: 100%;
+}
+.form-group {
+    padding: 5%;
+    padding-bottom: 0;
+}
+button {
+    width: 100%;
+}
+.login-wrapper {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}

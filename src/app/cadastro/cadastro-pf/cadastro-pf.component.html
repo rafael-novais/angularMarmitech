@@ -1,0 +1,40 @@
+<section class="form-pf-wrapper">
+    <form [formGroup]="formPf" (submit)="cadastrar()">
+          <div class="form-group">
+            <label>Nome</label>
+            <input formControlName="nome" type="text" class="form-control" aria-describedby="emailHelp">
+            <small *ngIf="formPf.get('nome').errors?.required" class="text-danger form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+              <label>Email</label>
+              <input formControlName="email" type="email" class="form-control" aria-describedby="emailHelp">
+              <small *ngIf="formPf.get('email').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+              <label>Senha</label>
+              <input formControlName="senha" type="password" class="form-control" aria-describedby="emailHelp">
+              <small *ngIf="formPf.get('senha').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+              <label>Foto</label>
+              <input formControlName="foto" type="text" class="form-control" aria-describedby="emailHelp">
+              <small *ngIf="formPf.get('foto').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+             <label>Cargo</label>
+             <input formControlName="cargo" type="text" class="form-control" aria-describedby="emailHelp">
+             <small *ngIf="formPf.get('cargo').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+             <label>Sobre</label>
+             <input formControlName="sobre" type="text" class="form-control" aria-describedby="emailHelp">
+             <small *ngIf="formPf.get('sobre').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+              <label>Telefone</label>
+              <input formControlName="telefone" type="text" class="form-control" aria-describedby="emailHelp">
+              <small *ngIf="formPf.get('telefone').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <button type="submit" [disabled]="formPf.invalid" class="btn btn-primary">Cadastrar</button>
+    </form>
+</section>

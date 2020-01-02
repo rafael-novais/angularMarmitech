@@ -1,0 +1,141 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Vaga para desenvolvedor Java Sênior",
+      "empresa": "Iteris",
+      "cargo": "Desenvolvedor Java",
+      "descricao": "Vaga pra codar uns bagulho loko lá",
+      "foto": "https://media.licdn.com/dms/image/C4E0BAQE6hGy74ohx8w/company-logo_200_200/0?e=2159024400&v=beta&t=TDGWuPEU5Y5l0kf62R0OVwldw67aoHo7Te5hJg__PlQ",
+      "slogan": "a software company",
+      "salario": "14.000"
+    },
+    {
+      "titulo": "Vaga para fajuto",
+      "empresa": "Fajuto masters",
+      "cargo": "Kenga",
+      "descricao": "Nenhuma",
+      "id": 4,
+      "foto": "https://s3-sa-east-1.amazonaws.com/ofertasford-prod-br/files/21b3de2c9f692b95ecf1706b0d99e520.png"
+    },
+    {
+      "titulo": "Oh loko malandro",
+      "empresa": "Sabe comé né ",
+      "cargo": "caceta",
+      "descricao": "Será responsavel por agir malandramente dentro dos limites da malandragem",
+      "id": 5,
+      "foto": "http://osboemios.com.br/wp-content/uploads/2014/07/o-ator-moyseis-marques-interpreta-max-overseas-em-opera-do-malandro-dirigido-por-joao-falcao-1405543978499_615x300.jpg"
+    },
+    {
+      "titulo": "Catapimbas",
+      "empresa": "Piraçununga Laticinios",
+      "cargo": "scrom blaster",
+      "descricao": "será o famigerado scrom blaster auxiliando o doglas sensei com os estagiarios vacilao",
+      "id": 6,
+      "foto": "http://feijoadasimulator.top/sources/2846.jpeg"
+    },
+    {
+      "titulo": "Caçador de pererekas",
+      "empresa": "Crazy Frog",
+      "cargo": "caça sapo",
+      "descricao": "Deverá ter muita disposição para caçar sapos até não aguentar mais",
+      "id": 7,
+      "foto": "https://animalbusiness.com.br/wp-content/uploads/2018/11/SAM_0338.jpg"
+    },
+    {
+      "titulo": "vaga de kenga",
+      "empresa": "asd",
+      "cargo": "asd",
+      "descricao": "asd",
+      "id": 8
+    }
+  ],
+  "usuarios": [
+    {
+      "nome": "Rafael Amorim",
+      "email": "r",
+      "telefone": "90404-8078",
+      "senha": "1",
+      "foto": "https://www.meutimao.com.br/fotos-do-corinthians/w614/2018/02/23/o_gigante_cassio_posando_para_mais_uma_foto_3x4_d.jpg",
+      "cargo": "Desenvolvedor Javaa",
+      "sobre": "Entusiasta de tencnologias frontend e apaixonado por backend, extrema facilidade e rapidez no código",
+      "candidaturas": [
+        5
+      ],
+      "id": 1
+    },
+    {
+      "nome": "Bombas Senpai",
+      "email": "b",
+      "telefone": "3243",
+      "senha": "1",
+      "foto": "https://i.ytimg.com/vi/a34qHw5TzEk/maxresdefault.jpg",
+      "cargo": "Desenvolvedor Java",
+      "sobre": "Bombas é brabo",
+      "candidaturas": [],
+      "id": 2
+    },
+    {
+      "candidaturas": [
+        4,
+        1,
+        8
+      ],
+      "cargo": "Desenvolvedor Frontend",
+      "email": "m",
+      "foto": "https://http2.mlstatic.com/mascara-cavalo-fantasia-meme-D_NQ_NP_645721-MLB31496358465_072019-F.jpg",
+      "nome": "mizael bispo",
+      "senha": "1",
+      "sobre": "mizael mlk chave de cadeia",
+      "telefone": "4002/8902",
+      "id": 3
+    },
+    {
+      "nome": "Carlão Boca de lobo",
+      "email": "c",
+      "telefone": "fasdf",
+      "senha": "1",
+      "foto": "https://portalcorreio.com.br/wp-content/uploads/2019/02/carlao-do-cristo-facebook.jpg",
+      "cargo": "catador de js",
+      "sobre": "carlao é brabp",
+      "candidaturas": [
+        5
+      ],
+      "id": 4
+    },
+    {
+      "nome": "Binho do baile",
+      "email": "b",
+      "telefone": "as",
+      "senha": "1",
+      "foto": "http://cdn.espn.com.br/image/wide/622_c51ef9f8-d4fc-3da9-803a-1f73a8389ac5.jpg",
+      "cargo": "as",
+      "sobre": "as",
+      "candidaturas": [
+        4
+      ],
+      "id": 5
+    },
+    {
+      "nome": "Epaminondas doidão",
+      "email": "e",
+      "telefone": "asd",
+      "senha": "1",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Dts_news_bill_gates_wikipedia.JPG",
+      "cargo": "zica do planeta",
+      "sobre": "asd",
+      "candidaturas": [],
+      "id": 6
+    }
+  ],
+  "empresas": [
+    {
+      "id": 1,
+      "empresa": "",
+      "email": "",
+      "senha": "",
+      "telefone": "",
+      "vagas": []
+    }
+  ]
+}

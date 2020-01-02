@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<section class="login-wrapper">
+    <div id="teste" class="card text-right" style="width: 18rem;">
+        <div class="teste2 card-body">
+            <img src="https://image.shutterstock.com/image-vector/m-letter-ve-tor-logo-260nw-562117753.jpg" class="card-img-top" alt="...">
+        <h5 class="card-title">Marmitech</h5>
+        <p class="card-text">Aqui você vai arrumar os melhores trampos em tecnologia bicho, pode acreditar que é verdade mesmo!</p>
+        </div>
+    </div>
+      <form id="teste" class="form-login" [formGroup]="loginForm" (submit)="login()">
+          <div class="form-group">
+              <label>Email</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" formControlName="email">
+              <small *ngIf="loginForm.get('email').errors?.required" class="form-text text-muted">
+                Email não pode estar em branco
+              </small>
+          </div>
+          <div class="form-group">
+              <label>Senha</label>
+              <input class="form-control" aria-describedby="emailHelp" formControlName="senha" type="password">
+              <small *ngIf="loginForm.get('senha').errors?.required" class="form-text text-muted">
+                Senha não pode estar em branco
+              </small>
+          </div>
+          <button class="btn btn-primary" [disabled]="loginForm.invalid" type="submit" >Login</button>
+      
+      </form>
+</section>
+

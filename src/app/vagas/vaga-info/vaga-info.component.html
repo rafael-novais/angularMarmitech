@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="jumbotron">
+    <h1 class="display-4">{{ vs.vagaClicada.empresa }}</h1>
+    <p class="lead">{{ vs.vagaClicada.slogan }}</p>
+    <hr class="my-4">
+    <p class="lead">{{ vs.vagaClicada.titulo }}</p>
+    <p>{{ vs.vagaClicada.descricao }}</p>
+    <p>Salário R${{ vs.vagaClicada.salario }}</p>
+    <a (click)="candidatar(vs.vagaClicada)" class="btn btn-primary btn-lg" style="color: aliceblue;" role="button">Candidatar-se</a>
+</div>
+
+<app-footer></app-footer>

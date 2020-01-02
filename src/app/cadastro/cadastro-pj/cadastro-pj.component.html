@@ -1,0 +1,25 @@
+<section class="form-pf-wrapper">
+    <form [formGroup]="formPj" (submit)="cadastrar()">
+          <div class="form-group">
+            <label>Empresa</label>
+            <input formControlName="nome" type="text" class="form-control" aria-describedby="emailHelp">
+            <small *ngIf="formPj.get('nome').errors?.required" class="text-danger form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+              <label>Email</label>
+              <input formControlName="email" type="email" class="form-control" aria-describedby="emailHelp">
+              <small *ngIf="formPj.get('email').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+              <label>Senha</label>
+              <input formControlName="senha" type="password" class="form-control" aria-describedby="emailHelp">
+              <small *ngIf="formPj.get('senha').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <div class="form-group">
+              <label>Telefone</label>
+              <input formControlName="telefone" type="text" class="form-control" aria-describedby="emailHelp">
+              <small *ngIf="formPj.get('telefone').errors?.required" class="form-text text-muted">Campo obrigatório</small>
+          </div>
+          <button type="submit" [disabled]="formPj.invalid" class="btn btn-primary">Cadastrar</button>
+    </form>
+</section>

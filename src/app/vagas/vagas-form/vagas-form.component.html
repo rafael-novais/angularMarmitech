@@ -1,0 +1,23 @@
+<form [formGroup]="pageForm">
+    <label>
+        Titulo:
+        <input type="text" formControlName="titulo">
+    </label>
+    <label>
+        Empresa:
+        <input type="text" formControlName="empresa">
+    </label>
+    <label>
+        Cargo:
+        <input type="text" formControlName="cargo"> 
+    </label>
+    <label>
+        Descrição:
+        <input type="text" formControlName="descricao">
+    </label>
+
+    <button (click)="salvar()">Salvar</button>
+
+</form>
+
+<a routerLink="/vagas" routerLinkActive="active">Vagas</a>

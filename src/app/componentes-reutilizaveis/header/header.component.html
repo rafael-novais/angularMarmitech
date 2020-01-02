@@ -1,0 +1,51 @@
+<header *ngIf="!userLogado.userLogado">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a routerLink='' routerLinkActive="active" class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Entrar</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink='/cadastro' routerLinkActive="active" class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Cadastre-se</a>
+    </li>
+  </ul>
+  
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item" aria-current="page">Entre ou faça login, contrate ou arrume um emprego, aqui o barato é loko e funciona mesmo!</li>
+    </ol>
+  </nav>
+  
+</header>
+
+<header *ngIf="userLogado.userLogado">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a id="userL" class="nav-item" routerLink='/perfil' routerLinkActive="active">
+                        <img class="img-fluid" [src]="userLogado.usuario.foto" alt="icon perfil">
+                        {{ userLogado.usuario.nome }}
+                    </a>
+                  </li>
+            
+              <li class="nav-item">
+                <a routerLink='/vagas' routerLinkActive="active" class="nav-link">Vagas</a>
+              </li>
+              <li class="nav-item">
+                <a (click)="irCandidaturas()" class="nav-link" style="cursor: pointer;">Candidaturas</a>
+              </li>
+              <li *ngIf="userLogado.usuario.admin == 'sim'" class="nav-item">
+                <a class="nav-link">Cadastrar vaga<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a (click)="userLogado.encerrarSessao()" class="nav-link" style="cursor: pointer;">Sair</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+
+    </nav>
+</header>

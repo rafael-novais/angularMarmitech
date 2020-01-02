@@ -1,0 +1,62 @@
+header {
+    width: 100%;
+}
+
+img {
+    max-width: 10%;
+    max-height: 50%;
+    border-radius: 100px;
+}
+.user-wrapper {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+#userL {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*
+header {
+    width: 100%;
+    height: 10%;
+    background-color: #128700;
+    display: flex;
+}
+.titulo {
+    width: 80%;
+    font-size: 3rem;
+    color: white;
+}
+.perfil {
+    transition: .5s;
+    display: flex;
+    width: 15%;
+    align-items: center;
+    text-decoration: none;
+}
+.perfil:hover {
+    background-color: darkblue;
+}
+.user-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    color: white;
+}
+header img {
+    max-width: 30%;
+    border-radius: 100px;
+    padding: 1%;
+}
+.header-wrapper {
+    display: flex;
+    margin: auto;
+    height: 100%;
+    width: 80%;
+}
+*/

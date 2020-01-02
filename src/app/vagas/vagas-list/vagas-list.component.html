@@ -1,0 +1,28 @@
+<app-header></app-header>
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Vagas</li>
+    </ol>
+</nav>
+
+<ul class="list-unstyled lista-vagas">
+    <li (click)="clickVaga(vaga)" class="media" *ngFor="let vaga of vagas">
+        <div class="card mb-3" style="width: 100%;">
+            <div class="row no-gutters">
+              <div class="col-md-2">
+                <img [src]="vaga.foto" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8" style="width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">{{ vaga.titulo }}</h5>
+                  <p class="card-text">{{ vaga.descricao }}</p>
+                  <p class="card-text"><small class="text-muted">{{ vaga.empresa }}</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </li>
+  </ul>
+
+<app-footer></app-footer>
